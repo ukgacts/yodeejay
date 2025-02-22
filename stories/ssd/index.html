@@ -669,7 +669,33 @@ blockquote span {
 
         /*attachment_xen*/
 
+        amp-story-page-attachment h1 {    font-size: 1.4em;
+  line-height: 1.4;
+  color: #2e2e2e;
+  margin: 0;
+  font-weight: 500;
+  margin: 0 0 10px 0;
+} 
+amp-story-page-attachment h2 {  
+    margin: 0 0 10px;
+  font-size: 1.4em;
+  line-height: 1.4;
+  color: #2e2e2e;
+}
 
+amp-story-page-attachment h3 {  
+line-height: 1.4;
+  font-size: 0.95em;
+  margin: 1em 0;
+  color: #2e2e2e;
+}
+
+amp-story-page-attachment a {  
+    font-weight: 600;
+  color: #037868;
+  font-size: 0.95em;
+  line-height: 1.4;
+}
     .camera {
   display: inline;
 font-weight: 300;
@@ -703,8 +729,22 @@ mask-size: 0.75rem;
         }
 
       
+.attachment_infobox h1 {
+    font-size: 1.4em;
+ line-height:1.4;
+  color: #2e2e2e;
+  margin: 0 0 10px 0;
+  font-weight: 500;
+}
 
- 
+.attachment_infobox ul {
+margin: 0;
+  list-style: none;
+  padding: 0;
+  font-size: .8em;
+  line-height: 1.4;
+  color: #4e4e4e;
+}
 
         .attachment_infobox_photo-wrapper {
             display: flex;
@@ -723,7 +763,8 @@ mask-size: 0.75rem;
 
         .attachment_supporting-text {
             padding-top: 1.527em;
-            color: black;
+            color: #2e2e2e;
+
             font-family: Roboto, Arial, sans-serif;
             
            
@@ -731,22 +772,34 @@ mask-size: 0.75rem;
          
         }
 
+        .attachment_supporting-text h4{
+            line-height: 1.4;
+            margin: 0 0 1em;
+  font-size: 0.95em;
+
+        }
+
         .attachment_supporting-text p {
-            font-size: 0.875rem;
-            font-weight: 400;
-            margin: 0;
-  line-height: 140%;
+            font-size: 0.95em;
+  font-weight: 300;
+  margin: 0;
+  line-height: 1.4;
+  color: #2e2e2e;
         }
 
    
 
-        .attachment_supporting-text h2 {
- 
-  font-size: 1.25rem;
-  color: black;
-}
 
- 
+.details {
+align-items: center;
+
+  display: grid;
+  grid-template-columns: 20% 70%;
+  font-size: .8em;
+  line-height: 1.4;
+  color: #4e4e4e;
+  font-weight: 400;
+}
        
 
 
@@ -771,8 +824,10 @@ mask-size: 0.75rem;
         .infobox-data {
  
             margin-top: 1.5rem;
-            font-size: 13px;
-  line-height: 140%;
+            font-size: .8em;
+  line-height: 1.4;
+
+  color: #4e4e4e;
         }
 
 
@@ -878,10 +933,13 @@ letter-spacing: 0.7px;
     margin-bottom: 20px;
     padding: 0;
   margin: 0;
-  display: flex;
-  flex-direction: column;  list-style-type: none;
-  font-size: 0.75rem;
-  padding-left: 0.313rem;
+ list-style-type: none;
+
+  font-size: 0.95em;
+  font-weight: 300;
+  margin: 0;
+  line-height: 1.4;
+  color: #2e2e2e;
 }
 /* List--end */
 
@@ -902,9 +960,10 @@ letter-spacing: 0.7px;
         
 
         .attachment_footer p {
-            color: white;
-            font-size: 12px;
-            line-height: 140%;
+            color: #f3f0ed;
+
+  line-height: 1.4;
+  font-size: .88em;
         }
 
 
@@ -1278,21 +1337,12 @@ p:after{
   justify-content: space-between;
   height: 100%; margin-top: 20px;">
 
-  <div> <p class="text-small" style="display: block;
-    margin: 0;
-      margin-bottom: 0px;
-    font-size: 0.75rem;
-    text-transform: uppercase;
-    line-height: 125%;
-    font-weight: 600;
-    margin-bottom: 0.313rem;"> International Dj/ Producer</p>
-      <h5 style="font-size: 1.25rem;
-      line-height: 100%;
-     margin: 0;">SuperStyle Deluxe</h5> </div>
+  <ul> <li> International Dj/ Producer</li>
+    <li>   <h1>SuperStyle Deluxe</h1> </li>
+  </ul>
                    
                      
-                     <div class="item" style="
-                     align-items: center;">  
+                     <li class="details" >  
       <span> 
       
       
@@ -1303,11 +1353,7 @@ p:after{
                         </svg>
       
                      </span>
-                        <span style="font-weight: 500;
-                        font-size: 0.75rem;
-                        line-height: 125%;
-                         letter-spacing: .42px;
-                      "> 
+                        <span > 
                     
                             
                     5,445  Spotify Monthly Listeners
@@ -1323,44 +1369,47 @@ p:after{
 
                   </div>
 
-
-                  
-              </div>
-
-              <div class="infobox-data">
+                  <div class="infobox-data">
 
       
 
-                   <div class="item" style="display: flex;
-                   align-items: center; flex-direction: row; column-gap: 1.25rem;
-                   ">  
-
-<div style="align-items: center;
-flex-direction: column;
-text-align: CENTER;
-
-display: flex;"> 
-<span style="letter-spacing: 0.9px;
-line-height: 100%;
-font-size: 70px;
-font-weight: 800;">UK
-
-
-
-</span>
-
-
-
-</div>                                     <span>
-    Hailing form the UK, Dance floor Takeovers  with killer productions and top-tier DJ skills, Scratchin & Basslines = WIN!
-</span>
-
-
-</div>
-
-
-
+                    <div class="item" style="display: flex;
+                    align-items: center; flex-direction: row; column-gap: 1.25rem;
+                    ">  
+ 
+ <div style="align-items: center;
+ flex-direction: column;
+ text-align: CENTER;
+ 
+ display: flex;"> 
+ <span style="letter-spacing: 0.9px;
+ line-height: 100%;
+ font-size: 70px;
+ font-weight: 800;">UK
+ 
+ 
+ 
+ </span>
+ 
+ 
+ 
+ </div>                                   
+ 
+ 
+ <span>
+     Hailing form the UK, Dance floor Takeovers  with killer productions and top-tier DJ skills, Scratchin & Basslines = WIN!
+ </span>
+ 
+ 
+ </div>
+ 
+ 
+ 
+               </div>
+                  
               </div>
+
+
 
 
 
@@ -1370,10 +1419,7 @@ font-weight: 800;">UK
       <div class="attachment_bg-grey ">
           <div class="attachment_supporting-text pr1 pl1 pb1">
 
-            <h4 style="font-size: 1rem;
-            text-transform: uppercase;
-            line-height: 110%; margin: 0 0 20px;
-          ">Biography</h4>
+            <h4>Biography</h4>
 
          <p>
             SuperStyleDeluxe first emerged in the late '90s as a rising DJ talent in the West Midlands. Honed his skills crafting mixtapes and rocking the decks at the legendary Stump Juice nightclub in Wolverhampton, where the name "SuperStyleDeluxe" was born and quickly stuck.
@@ -1443,6 +1489,10 @@ font-weight: 800;">UK
 
 
 
+   
+
+    
+  
 
 
 
@@ -1600,9 +1650,7 @@ max-height: 80px;"  > </amp-img>
                   <div class="attachment_bg-grey ">
                       <div class="attachment_supporting-text pr1 pl1 pb1">
                        
-                        <h5 style="font-size: 1.25rem;
-                        line-height: 100%;
-                        margin:0 0 20px;">Promo Dj Mix</h5>
+                        <h1>Promo Dj Mix</h1>
 
                        
 
@@ -1612,12 +1660,9 @@ max-height: 80px;"  > </amp-img>
     <amp-soundcloud height="300" layout="fixed-height" data-trackid="2004878771" data-visual="true"></amp-soundcloud>
 
 
+<br>
 
-
-                           <h4 style="font-size: 1rem;
-                           text-transform: uppercase;
-                           line-height: 110%; margin: 20px 0 10px;
-                         "> Countries Toured:</h4>
+                           <h4> Countries Toured</h4>
 
 
 
@@ -1670,23 +1715,17 @@ max-height: 80px;"  > </amp-img>
      
          
             
-            <div class="list__heading">
+           
             
             
-  
-            
-            
-                <h4 style="font-size: 1rem;
-                text-transform: uppercase;
-                line-height: 110%; margin: 0 0 10px;
-              "> A few Venues:</h4>
+                <h4> A few Venues</h4>
 
             
          
             
             
             
-            </div>
+            
             <ul class="list">
             <li><strong>Fabric</strong></li>
             <li><strong>93 Feet East</strong></li>
@@ -1704,12 +1743,17 @@ max-height: 80px;"  > </amp-img>
             <amp-img src="assets/images/attachment3.webp" layout="responsive" width="640" height="429" style="max-width: 100%; height: auto; margin: 10px 0 20px;"></amp-img>
      
          
+
+            <h4>The Latest On Instagram</h4>
+            
+            <amp-instagram data-shortcode="DF-3DagAHe9" width="310" height="551"  data-captioned layout="responsive">
+          </amp-instagram>
+        
             
             
                       </div>
-            
-                     
-                  
+
+                
                     </div>
                
             
@@ -1896,12 +1940,7 @@ It is not allowed to keep this component (Sportify) here..it works but it cannot
 
 
                               
-                               
-                                <amp-instagram data-shortcode="DF-3DagAHe9" width="310" height="551"  data-captioned layout="responsive">
-                                </amp-instagram>
-                                
-                              
-                           
+                            
 
 
           
@@ -2058,26 +2097,53 @@ It is not allowed to keep this component (Sportify) here..it works but it cannot
             <div class="attachment_infobox beige pr1 pl1 pb2 pt1">
             
             
-                <h4 style="font-size: 1rem;
-                text-transform: uppercase;
-                line-height: 110%; margin: 0 0 20px;
-              ">For all Dj Bookings</h4>
-    
+                <h1 >For all Bookings & enquiries please Contact:</h1>
+                
+
           
 
 
 <span> Email:</span>
                 <a href="mailto:mgmt@payback-project.co.uk.br"
-                style="font-weight: 700; color: #037868;"
-                
-                
-                
+                 
                 >mgmt@payback-project.co.uk</a>
-    
+  
                
-    
-    
-              </div>
+                <h3> Press Kit Downloads</h3>
+
+                <ul>  
+
+                    <li> 
+                <a href="https://drive.google.com/drive/folders/16qOPzYShocZQ1u3jqHOcSXfkPF4YoSYm?usp=share_link">Artist Logo
+                    <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#037868"><path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"/></svg>
+                    
+            </a>
+                <li> 
+                <a href="https://drive.google.com/drive/folders/16qOPzYShocZQ1u3jqHOcSXfkPF4YoSYm?usp=share_link">Artist Press Shots
+                    <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#037868"><path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"/></svg>
+                    
+                
+                </a>
+
+                </li>
+                <li> 
+                    <a href="https://drive.google.com/drive/folders/16qOPzYShocZQ1u3jqHOcSXfkPF4YoSYm?usp=share_link">Label Logos
+                        <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#037868"><path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"/></svg>
+                    
+                    </a>
+
+                    </li>
+                        <li> 
+                        <a href="https://drive.google.com/drive/folders/16qOPzYShocZQ1u3jqHOcSXfkPF4YoSYm?usp=share_link">Release Artwork
+                            <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#037868"><path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"/></svg>
+                    
+                        </a>
+
+                        </li>
+
+                        </ul>
+            
+            </div>
 
 
        
@@ -2203,25 +2269,33 @@ max-height: 80px;"  > </amp-img>
 
               
           <div class="heading-container" style=" margin-bottom: 15px;">    
-<h2 style="text-align: center; font-size: 2.375rem; color: #ebe8e0; line-height: 100%;"
+<h2 style="text-align: center; font-size: 1.8em; color: #ebe8e0; line-height: 100%;"
 
 >
     
-    Custom Made for SuperStyle Deluxe <br> By:</h2>
+    Custom Made for SuperStyle Deluxe  By:</h2>
 
 </div>     
                  <div class="fixed-height-container" style="
-                 height: 120px; margin-bottom: 30px;
+                 height: 120px; margin-bottom: 20px;
             ">
-                <amp-img class="contain" src="assets/images/logo-footer.png" width="200" height="122" layout="fill" animate-in="fade-in"  
-                    style="">
+                <amp-img class="contain"  src="assets/images/logo-footer.png" width="200" height="122" layout="fill" animate-in="fade-in"  
+                    >
                 </amp-img>
+
+               
 </div>
-            
+  
+
+<div class="fixed-height-container" style="
+height: 100px; margin-bottom: 35px;
+">
+<amp-img class="contain"  src="assets/images/qrcode.png" width="200" height="200" layout="fill" animate-in="fade-in"  
+>
+</amp-img>
 
 
-
-
+</div>
                 
    
    
@@ -2229,13 +2303,7 @@ max-height: 80px;"  > </amp-img>
   color: #e7e4dc; margin-bottom: 30px;">Want your own interactive story? <br> Let's bring your vision to life</h3>
             
 
-<h2 style="text-align: center;
-font-size: 2.375rem;
-color: #ebe8e0;
-line-height: 100%;"
 
-
-animate-in="pulse" >GET IN TOUCH!</h2>
 
 
 
