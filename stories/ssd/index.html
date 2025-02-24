@@ -7,14 +7,14 @@
 
 
 <!-- HTML Meta Tags -->
-<title>Super Style Deluxe</title>
+<title>SuperStyle Deluxe</title>
 <meta name="title" content="Super Style Deluxe
 " />
 
 <!-- Facebook Meta Tags -->
 <meta property="og:url" content="https://yodeejay.co.uk/stories/ssd">
 <meta property="og:type" content="profile">
-<meta property="og:title" content="Super Style Deluxe">
+<meta property="og:title" content="SuperStyle Deluxe">
 <meta property="og:description" content="UK DJ & Producer in the underground garage and bass scene.">
 <meta property="og:image" content="https://yodeejay.co.uk/stories/ssd/assets/og.png">  
 
@@ -22,7 +22,7 @@
 <meta name="twitter:card" content="summary_large_image">
 
 <meta property="twitter:url" content="https://yodeejay.co.uk/stories/ssd">
-<meta name="twitter:title" content="Super Style Deluxe">
+<meta name="twitter:title" content="SuperStyle Deluxe">
 <meta name="twitter:description" content="UK DJ & Producer in the underground garage and bass scene.">
 <meta name="twitter:image" content="https://yodeejay.co.uk/stories/superstyledeluxe/1200X630.png">
 
@@ -92,7 +92,10 @@
             background-color: #000;
         }
 
-        .gradient {
+      
+  /**Colors**/
+
+  .gradient {
             background: linear-gradient(to bottom, transparent 0%, transparent 50%, black 100%);
         }
 .gradient_flat {
@@ -100,7 +103,6 @@
   background-color: rgba(0, 0, 0, 0.52);
 }
 
-  
 .beige {
             background-image: linear-gradient(rgba(243, 240, 237, 1), rgba(243, 240, 237, 1));
 
@@ -111,12 +113,40 @@
             background: black; 
         }
 
+
+        .theme-color   {
+
+
+background-color: rgba(249, 73, 35, 0.7);
+
+} 
+
+.gradient-bottom {
+            background: linear-gradient(to top, rgb(0, 0, 0, 1), rgb(0, 0, 0, .8), rgb(0, 0, 0, .6), rgb(0, 0, 0, .4), rgb(0, 0, 0, .2), transparent);
+
+        }
+
+
+  /**Colors--end**/
+
+
+
+
+  /**Typography**/
+
+
+  /**Typography--end**/
+
         .caption-top h3 {
 
 font-weight: 400;
 
 }
 
+p {
+    font-size: .95em;
+  line-height: 1.4;
+}
 
 
 .slide-caption {
@@ -127,12 +157,7 @@ text-shadow: .05em .05em 0 rgba(0,0,0,1);
 
 }
                 
-.theme-color   {
-
-
-    background-color: rgba(249, 73, 35, 0.7);
-
-}           
+          
 
 
 .cover-title-tagline { font-size: 2.875em;
@@ -172,10 +197,7 @@ line-height: 0.5;     color: #ed3833;
         }
 
 
-        .gradient-bottom {
-            background: linear-gradient(to top, rgb(0, 0, 0, 1), rgb(0, 0, 0, .8), rgb(0, 0, 0, .6), rgb(0, 0, 0, .4), rgb(0, 0, 0, .2), transparent);
 
-        }
 
         .img-credits {
             font-size: 10px;
@@ -184,24 +206,8 @@ line-height: 0.5;     color: #ed3833;
         }
 
 
-        h1 {
-            font-weight: bold;
-            font-size: 2.875em;
-            font-weight: normal;
-            line-height: 1.174;
-        }
 
 
-
-        p {
-            font-weight: normal;
-            font-size: 1.3em;
-            line-height: 1.5em;
-            font-family: "Roboto Condensed", sans-serif;
-            font-optical-sizing: auto;
-            font-optical-sizing: auto;
-
-        }
 .content p { 
 
         color: white;
@@ -275,6 +281,11 @@ line-height: 0.5;     color: #ed3833;
 
  /*** MEDIA ****/
  /* Images */
+ amp-story-page-attachment amp-img {
+ max-width: 100%;
+  height: auto;
+  margin: 10px 0 32px;
+}
 
  .fixed-height-container {
      position: relative;
@@ -662,12 +673,36 @@ blockquote span {
   font-optical-sizing: auto;
         }
 
+   /*embeds_xen*/
+
+amp-instagram {
+
+        margin-top: 1em;
+
+}
 
 
 
 
 
-        /*attachment_xen*/
+
+
+
+
+ /*attachment_xen*/
+
+.space-between { 
+       display: flex;
+flex-direction: row;
+align-items: center;
+margin: 0;
+padding: 8px 0px; justify-content: space-between; 
+}
+
+.border-top {
+    border-top: 1px solid rgb(75, 74, 74);
+
+}
 
         amp-story-page-attachment h1 {    font-size: 1.4em;
   line-height: 1.4;
@@ -762,7 +797,7 @@ margin: 0;
         }
 
         .attachment_supporting-text {
-            padding-top: 1.527em;
+            padding-top: 10px;
             color: #2e2e2e;
 
             font-family: Roboto, Arial, sans-serif;
@@ -774,7 +809,8 @@ margin: 0;
 
         .attachment_supporting-text h4{
             line-height: 1.4;
-            margin: 0 0 1em;
+            margin: 0;
+            padding: 5px 0 5px 0;
   font-size: 0.95em;
 
         }
@@ -930,15 +966,15 @@ letter-spacing: 0.7px;
 
 
 .list {
-    margin-bottom: 20px;
-    padding: 0;
-  margin: 0;
+ 
+    padding: 0 0 10px;
+  margin: 0 0 20px;
  list-style-type: none;
 
-  font-size: 0.95em;
+  font-size: 14px;
   font-weight: 300;
   margin: 0;
-  line-height: 1.4;
+  line-height: 18px;
   color: #2e2e2e;
 }
 /* List--end */
@@ -983,9 +1019,10 @@ letter-spacing: 0.7px;
 }
 
 
-
-
-
+.footer-logo amp-img{
+margin: 0;
+  padding: 0;
+}
 
 
 
@@ -1432,8 +1469,7 @@ p:after{
            
         </p> 
            
-        <amp-img src="assets/images/attachment1.jpg" layout="responsive" width="1080" height="566" style="max-width: 100%; height: auto; margin: 10px 0 20px;"
-     
+        <amp-img src="assets/images/attachment1.jpg" layout="responsive" width="1080" height="566"      
          
          
          
@@ -1650,29 +1686,45 @@ max-height: 80px;"  > </amp-img>
                   <div class="attachment_bg-grey ">
                       <div class="attachment_supporting-text pr1 pl1 pb1">
                        
-                        <h1>Promo Dj Mix</h1>
+
+                        <div class="space-between "> 
+                            <h4>Promo Dj Mix</h4>
+                            
+                            <span>       
+                                
+                                <svg role="img" viewBox="0 0 24 24" width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill="#2e2e2e">
+                                    <title>SoundCloud</title>
+                                    <path d="M1.175 12.225c-.051 0-.094.046-.101.1l-.233 2.154.233 2.105c.007.058.05.098.101.098.05 0 .09-.04.099-.098l.255-2.105-.27-2.154c0-.057-.045-.1-.09-.1m-.899.828c-.06 0-.091.037-.104.094L0 14.479l.165 1.308c0 .055.045.094.09.094s.089-.045.104-.104l.21-1.319-.21-1.334c0-.061-.044-.09-.09-.09m1.83-1.229c-.061 0-.12.045-.12.104l-.21 2.563.225 2.458c0 .06.045.12.119.12.061 0 .105-.061.121-.12l.254-2.474-.254-2.548c-.016-.06-.061-.12-.121-.12m.945-.089c-.075 0-.135.06-.15.135l-.193 2.64.21 2.544c.016.077.075.138.149.138.075 0 .135-.061.15-.15l.24-2.532-.24-2.623c0-.075-.06-.135-.135-.135l-.031-.017zm1.155.36c-.005-.09-.075-.149-.159-.149-.09 0-.158.06-.164.149l-.217 2.43.2 2.563c0 .09.075.157.159.157.074 0 .148-.068.148-.158l.227-2.563-.227-2.444.033.015zm.809-1.709c-.101 0-.18.09-.18.181l-.21 3.957.187 2.563c0 .09.08.164.18.164.094 0 .174-.09.18-.18l.209-2.563-.209-3.972c-.008-.104-.088-.18-.18-.18m.959-.914c-.105 0-.195.09-.203.194l-.18 4.872.165 2.548c0 .12.09.209.195.209.104 0 .194-.089.21-.209l.193-2.548-.192-4.856c-.016-.12-.105-.21-.21-.21m.989-.449c-.121 0-.211.089-.225.209l-.165 5.275.165 2.52c.014.119.104.225.225.225.119 0 .225-.105.225-.225l.195-2.52-.196-5.275c0-.12-.105-.225-.225-.225m1.245.045c0-.135-.105-.24-.24-.24-.119 0-.24.105-.24.24l-.149 5.441.149 2.503c.016.135.121.24.256.24s.24-.105.24-.24l.164-2.503-.164-5.456-.016.015zm.749-.134c-.135 0-.255.119-.255.254l-.15 5.322.15 2.473c0 .15.12.255.255.255s.255-.12.255-.27l.15-2.474-.165-5.307c0-.148-.12-.27-.271-.27m1.005.166c-.164 0-.284.135-.284.285l-.103 5.143.135 2.474c0 .149.119.277.284.277.149 0 .271-.12.284-.285l.121-2.443-.135-5.112c-.012-.164-.135-.285-.285-.285m1.184-.945c-.045-.029-.105-.044-.165-.044s-.119.015-.165.044c-.09.054-.149.15-.149.255v.061l-.104 6.048.115 2.449v.008c.008.06.03.135.074.18.058.061.142.104.234.104.08 0 .158-.044.209-.09.058-.06.091-.135.091-.225l.015-.24.117-2.203-.135-6.086c0-.104-.061-.193-.135-.239l-.002-.022zm1.006-.547c-.045-.045-.09-.061-.15-.061-.074 0-.149.016-.209.061-.075.061-.119.15-.119.24v.029l-.137 6.609.076 1.215.061 1.185c0 .164.148.314.328.314.181 0 .33-.15.33-.329l.15-2.414-.15-6.637c0-.12-.074-.221-.165-.277m8.934 3.777c-.405 0-.795.086-1.139.232-.24-2.654-2.46-4.736-5.188-4.736-.659 0-1.305.135-1.889.359-.225.09-.27.18-.285.359v9.368c.016.18.15.33.33.345h8.185C22.681 17.218 24 15.914 24 14.28s-1.319-2.952-2.938-2.952">
+                                    </path>
+                                </svg>
+                        
+                        </span>
+                        </div>
+                    
 
                        
 
 
-
-                       
-    <amp-soundcloud height="300" layout="fixed-height" data-trackid="2004878771" data-visual="true"></amp-soundcloud>
-
+                            <amp-soundcloud height="166"  layout="fixed-height" data-trackid="2004775771" data-visual="true"></amp-soundcloud>
+   
 
 <br>
 
-                           <h4> Countries Toured</h4>
+<div class="space-between  "> 
+    <h4> Countries Toured</h4>
+    
+    <span>       
+        
+
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="2e2e2e"><path d="M123-440q-1-10-1.5-20t-.5-20q0-75 28-140.5t77-114q49-48.5 114-77T480-840q75 0 140.5 28.5t114 77q48.5 48.5 77 114T840-480q0 10-.5 20t-1.5 20h-81q2-10 2.5-20t.5-20q0-10-.5-20t-2.5-20H639q1 10 1 20v40q0 10-1 20h-79v-33q0-12-.5-24t-1.5-23H403q-1 11-1.5 23t-.5 24v33h-79q-1-10-1-20v-40q0-10 1-20H204q-2 10-2.5 20t-.5 20q0 10 .5 20t2.5 20h-81Zm105-160h103q8-43 20-77.5t26-62.5q-48 18-87 54.5T228-600Zm186 0h132q-10-43-25-84t-41-76q-26 35-41.5 76T414-600Zm216 0h103q-23-49-62.5-85.5T583-740q14 30 26.5 63.5T630-600ZM440-120v-40q0-50-35-85t-85-35H80v-80h240q48 0 89.5 21t70.5 59q29-38 70.5-59t89.5-21h240v80H640q-50 0-85 35t-35 85v40h-80Z"/></svg>
+
+</span>
+</div>
+
+                        
 
 
 
-
-                       
-                       
-            
-            
-            
-            
             
             
             
@@ -1711,7 +1763,7 @@ max-height: 80px;"  > </amp-img>
             
             </ul>
 
-            <amp-img src="assets/images/attachment2.webp" layout="responsive" width="640" height="429" style="max-width: 100%; height: auto; margin: 10px 0 20px;"></amp-img>
+            <amp-img src="assets/images/attachment2.webp" layout="responsive" width="640" height="429" ></amp-img>
      
          
             
@@ -1740,12 +1792,18 @@ max-height: 80px;"  > </amp-img>
             
             
             
-            <amp-img src="assets/images/attachment3.webp" layout="responsive" width="640" height="429" style="max-width: 100%; height: auto; margin: 10px 0 20px;"></amp-img>
+            <amp-img src="assets/images/attachment3.webp" layout="responsive" width="640" height="429" ></amp-img>
      
          
-
-            <h4>The Latest On Instagram</h4>
-            
+<div class="space-between border-top" > 
+            <h4>The Latest On Instagram</h4> <span>              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                fill="none" stroke="#2e2e2e" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" >
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" /> 
+            </svg></span>
+        </div>
             <amp-instagram data-shortcode="DF-3DagAHe9" width="310" height="551"  data-captioned layout="responsive">
           </amp-instagram>
         
@@ -1910,7 +1968,7 @@ max-height: 80px;"  > </amp-img>
     left: 4%;
     position: absolute;">
     <amp-img src="assets/images/discography.png" width="200" height="43" layout="responsive"
-        style="">
+    >
     </amp-img>
 
 </figure>
@@ -1928,13 +1986,28 @@ max-height: 80px;"  > </amp-img>
                   
                         <div class="attachment_bg-grey ">
                             <div class="attachment_supporting-text pr1 pl1 pb1">
-                                <p> Promo Mix (Jan 2025)</p>
 
-                                <amp-soundcloud height="300" layout="fixed-height" data-trackid="2004775771" data-visual="true"></amp-soundcloud>
+
+                                <div class="space-between "> 
+                                    <h4> Top Tracks</h4>
+                                    
+                                    <span>       
+                                        
+
+                                        <svg role="img" viewBox="0 0 24 24" width="24" height="24" fill="#2e2e2e" stroke-width="1" stroke-linecap="round" xmlns="http://www.w3.org/2000/svg">
+                                            <title>Spotify</title>
+                                            <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z">
+                                            </path>
+                                        </svg>
+
+                                        
                                 
-It is not allowed to keep this component (Sportify) here..it works but it cannot pass validation. No validation means no  Google cache and no Google cache makes story slow
+                                </span>
+                                </div>
+                            
 
-                                <amp-iframely data-layout="fixed-height" data-url="https://open.spotify.com/artist/7loyEemyWacQIhuZb1kJ6a" data-key="a43f2cecd0943b69f55f051d5270ac57" data-domain="cdn.iframe.ly" layout="fixed-height" height="152"></amp-iframely>
+                                
+                                <amp-iframely data-layout="fixed-height" data-url="https://open.spotify.com/artist/7loyEemyWacQIhuZb1kJ6a" data-key="a43f2cecd0943b69f55f051d5270ac57" data-domain="cdn.iframe.ly" layout="fixed-height" height="760"></amp-iframely>
 
 
 
@@ -2097,7 +2170,7 @@ It is not allowed to keep this component (Sportify) here..it works but it cannot
             <div class="attachment_infobox beige pr1 pl1 pb2 pt1">
             
             
-                <h1 >For all Bookings & enquiries please Contact:</h1>
+                <h3 >For all Bookings & enquiries please Contact:</h3>
                 
 
           
@@ -2108,8 +2181,22 @@ It is not allowed to keep this component (Sportify) here..it works but it cannot
                  
                 >mgmt@payback-project.co.uk</a>
   
+                <div class="space-between border-top" style="margin-top: 20px;"> 
+
+                    <h3> Press Kit Downloads</h3>
+                    
+                    <span>       
+                        
+
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="2e2e2e"><path d="M160-120q-33 0-56.5-23.5T80-200v-640l67 67 66-67 67 67 67-67 66 67 67-67 67 67 66-67 67 67 67-67 66 67 67-67v640q0 33-23.5 56.5T800-120H160Zm0-80h280v-240H160v240Zm360 0h280v-80H520v80Zm0-160h280v-80H520v80ZM160-520h640v-120H160v120Z"/></svg>
+                        
+                
+                </span>
+                </div>
+
+
                
-                <h3> Press Kit Downloads</h3>
+              
 
                 <ul>  
 
@@ -2268,16 +2355,16 @@ max-height: 80px;"  > </amp-img>
   padding-right: 0;">
 
               
-          <div class="heading-container" style=" margin-bottom: 15px;">    
-<h2 style="text-align: center; font-size: 1.8em; color: #ebe8e0; line-height: 100%;"
+          <div class="heading-container" style=" margin-bottom: 8px;
+          font-size: 14px;
+          margin-top: 8px; text-align: center;  color: #ebe8e0; line-height: 100%;   font-weight: 600;">    
 
->
     
-    Custom Made for SuperStyle Deluxe  By:</h2>
+    Custom Made for SuperStyle Deluxe  By:
 
 </div>     
                  <div class="fixed-height-container" style="
-                 height: 120px; margin-bottom: 20px;
+                 height: 120px; margin-bottom: 12px;
             ">
                 <amp-img class="contain"  src="assets/images/logo-footer.png" width="200" height="122" layout="fill" animate-in="fade-in"  
                     >
@@ -2299,8 +2386,8 @@ height: 100px; margin-bottom: 35px;
                 
    
    
-<h3 style="font-size: 1.25rem; line-height: 100%; text-align: center;
-  color: #e7e4dc; margin-bottom: 30px;">Want your own interactive story? <br> Let's bring your vision to life</h3>
+<p style=" text-align: center;
+  color: #e7e4dc; margin-top: 60px;"> 🔊 Want your own interactive story? <br> Let's bring your vision to life 🔥</p>
             
 
 
