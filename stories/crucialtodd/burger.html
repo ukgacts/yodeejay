@@ -1,0 +1,284 @@
+<!doctype html>
+<html ⚡ lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="This is the AMP Boilerplate.">
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    
+    <link rel="canonical" href="https://wsdemos.uc.r.appspot.com/burger">
+    <title>Burger Story</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2016%2016'%3E%3Ctext%20x='0'%20y='14'%3E❎%3C/text%3E%3C/svg%3E" type="image/svg+xml" />
+    <link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js">
+    <link rel="preload" as="script" href="https://cdn.ampproject.org/v0/amp-story-1.0.js">
+    <link rel="preconnect dns-prefetch" href="https://fonts.gstatic.com/" crossorigin>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-story" src="https://cdn.ampproject.org/v0/amp-story-1.0.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style amp-custom>
+      amp-story-page {
+        font-family: 'Poppins', sans-serif;
+        color: white;
+        background-color: #0D0D1A;
+      }
+      .burger-bg::after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(transparent 50%, #0D0D1A);
+        z-index: 1;
+      }
+      h1.title {
+        font-weight: bold;
+        font-size: 1.75em;
+        position: absolute;
+        width: 83%;
+        left: 12%;
+        top: 10%;
+      }
+      h2.subtitle {
+        font-weight: bold;
+        font-size: .9em;
+        text-align: center;
+        position: absolute;
+        width: 85%;
+        left: 7.5%;
+        top: 18%;
+        background: url('burger/assets/banner.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        line-height: 2em;
+        color: #282843;
+      }
+      .arrows {
+        position: absolute;
+        width: 60%;
+        left: 20%;
+        top: 31%;
+      }
+      .food-label {
+        font-weight: bold;
+        font-size: .8em;
+        width: 23%;
+        line-height: 1.1em;
+        position: absolute;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
+      }
+      .buns {
+        top: 30%;
+        left: 65%;
+      }
+      .veggies {
+        top: 39.5%;
+        left: 7%;
+      }
+      .beef {
+        top: 56%;
+        width: 20%;
+        left: 11%;
+      }
+      .cheese {
+        top: 54%;
+        left: 75%;
+      }
+      .guac {
+        top: 74.7%;
+        left: 30%;
+      }
+      .text-align-right {
+        text-align: right;
+      }
+      h3.footer {
+        font-size: .8em;
+        font-weight: normal;
+        text-align: center;
+        width: 70%;
+        position: absolute;
+        left: 15%;
+        top: 85%;
+        line-height: 1.1em;
+        position: absolute;
+      }
+      .dot-container {
+        width: 2em;
+        height: 2em;
+        position: absolute;
+        left: 12%;
+        top: 8%;
+      }
+      .dot {
+        width: 100%;
+        height: 100%;
+        background: #ffffff77;
+        border-radius: 50%;
+        position: relative;
+        animation: pop 1s ease-in-out .5s infinite alternate;
+      }
+      .dot::after {
+        content: '';
+        width: 50%;
+        height: 50%;
+        background: white;
+        border-radius: 50%;
+        position: absolute;
+        left: 25%;
+        top: 25%;
+      }
+      @keyframes pop {
+        0% {
+          transform: scale(.8);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+      .dot-container.second {
+        left: 45%;
+        top: 75%;
+      }
+      .dot-container.second .dot {
+        animation-delay: 1s;
+      }
+      .dark-overlay {
+        background: linear-gradient(rgba(0, 0, 0, 0.485), rgba(0, 0, 0, 0.779));
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+      }
+      .wrong-footer {
+        font-weight: normal;
+        font-size: 0.6em;
+        background: #ffffffee;
+        color: black;
+        width: 22em;
+        border-left: 0.5em solid rgb(254, 63, 63);
+        position: absolute;
+        left: 10%;
+        top: 85%;
+        padding: 0.5em 0.8em;
+        border-radius: 0.2em;
+      }
+
+      #cover-good h1.title {
+        font-size: .45em;
+        left: 10%;
+        width: 80%;
+      }
+      #cover-good h2.subtitle {
+        font-size: .25em;
+      }
+      #cover-good .arrows {
+        width: 67%;
+        left: 19%;
+        top: 30%;
+      }
+      #cover-good .food-label {
+        font-size: .21em;
+      }
+      #cover-good .buns {
+        left: 70%;
+        top: 28%;
+      }
+      #cover-good .veggies {
+        left: 6%;
+      }
+      #cover-good .beef {
+        top: 58%;
+        left: 11%;
+      }
+      #cover-good .cheese {
+        left: 76%;
+        top: 56.2%;
+      }
+      #cover-good .guac {
+        left: 31%;
+        top: 78.5%;
+      }
+      #cover-good h3.footer {
+        font-size: .2em;
+      }
+    </style>
+  </head>
+  <body>
+    <amp-story standalone
+               publisher="Story Format"
+               title="Burger Story"
+               publisher-logo-src="burger/assets/burger.png"
+               poster-portrait-src="burger/assets/burger.png"
+               poster-square-src="burger/assets/burger.png"
+               poster-landscape-src="burger/assets/burger.png">
+      <amp-story-page id="cover-bad" class="bad">
+        <amp-story-grid-layer template="fill" class="burger-bg">
+          <amp-img src="burger/assets/burger.png" width="360" height="593"></amp-img>
+        </amp-story-grid-layer>
+        <amp-story-grid-layer template="vertical">
+          <h1 class="title">THE PERFECT BURGER</h1>
+          <h2 class="subtitle">You can make at home</h2>
+          <div class="arrows">
+            <amp-img src="burger/assets/arrows.svg" width="196" height="248" layout="responsive"></amp-img>
+          </div>
+          <p class="buns food-label">HAMBURGER BUNS</p>
+          <p class="veggies food-label">VEGGIES</p>
+          <p class="text-align-right beef food-label">GROUND BEEF</p>
+          <p class="cheese food-label">CHEDDAR CHEESE</p>
+          <p class="guac food-label">GUACAMOLE</p>
+          <h3 class="footer">These burgers can be grilled, pan-grilled, broiled, or baked. Simple seasonings and diced bacon make these burgers juicy and delicious.</h3>
+        </amp-story-grid-layer>
+      </amp-story-page>
+
+      <amp-story-page id="cover-bad-dots" class="bad">
+        <amp-story-grid-layer template="fill" class="burger-bg">
+          <amp-img src="burger/assets/burger.png" width="360" height="593"></amp-img>
+        </amp-story-grid-layer>
+        <amp-story-grid-layer template="vertical">
+          <h1 class="title">THE PERFECT BURGER</h1>
+          <h2 class="subtitle">You can make at home</h2>
+          <div class="arrows">
+            <amp-img src="burger/assets/arrows.svg" width="196" height="248" layout="responsive"></amp-img>
+          </div>
+          <p class="buns food-label">HAMBURGER BUNS</p>
+          <p class="veggies food-label">VEGGIES</p>
+          <p class="text-align-right beef food-label">GROUND BEEF</p>
+          <p class="cheese food-label">CHEDDAR CHEESE</p>
+          <p class="guac food-label">GUACAMOLE</p>
+          <h3 class="footer">These burgers can be grilled, pan-grilled, broiled, or baked. Simple seasonings and diced bacon make these burgers juicy and delicious.</h3>
+        </amp-story-grid-layer>
+        <amp-story-grid-layer template="vertical">
+          <div class="dark-overlay" animate-in="fade-in"></div>
+          <div class="dot-container" animate-in="scale-fade-up">
+            <div class="dot"></div>
+          </div>
+          <div class="dot-container second" animate-in="scale-fade-up">
+            <div class="dot"></div>
+          </div>
+          <h3 class="wrong-footer" animate-in="fly-in-left">Stories don't always look as good as in editors,
+            watch out for inconsistencies using the Preview tool</h3>
+        </amp-story-grid-layer>
+      </amp-story-page>
+
+      <amp-story-page id="cover-good" class="good">
+        <amp-story-grid-layer template="fill" class="burger-bg" preset="2021-background">
+          <amp-img src="burger/assets/burger.png" width="360" height="593"></amp-img>
+        </amp-story-grid-layer>
+        <amp-story-grid-layer template="vertical" preset="2021-foreground">
+          <h1 class="title">THE PERFECT BURGER</h1>
+          <h2 class="subtitle">You can make at home</h2>
+          <div class="arrows">
+            <amp-img src="burger/assets/arrows.svg" width="196" height="248" layout="responsive"></amp-img>
+          </div>
+          <p class="buns food-label">HAMBURGER BUNS</p>
+          <p class="veggies food-label">VEGGIES</p>
+          <p class="text-align-right beef food-label">GROUND BEEF</p>
+          <p class="cheese food-label">CHEDDAR CHEESE</p>
+          <p class="guac food-label">GUACAMOLE</p>
+          <h3 class="footer">These burgers can be grilled, pan-grilled, broiled, or baked. Simple seasonings and diced bacon make these burgers juicy and delicious.</h3>
+        </amp-story-grid-layer>
+      </amp-story-page>
+    </amp-story>
+  </body>
+</html>
