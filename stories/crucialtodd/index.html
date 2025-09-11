@@ -134,8 +134,17 @@ h1 {
 }
 
 
+
+.m0 {
+
+margin:0; 
+
+}
 .pt1 {
     padding-top:16px;
+}
+.pt2 {
+    padding-top:24px;
 }
 
 
@@ -955,7 +964,12 @@ margin: 0;
         }
 
    
-      
+        .attachment_infobox_right a {
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
 
    
         amp-story-page-attachment figcaption {
@@ -971,7 +985,7 @@ margin: 0;
 align-items: center;
 
   display: grid;
-  grid-template-columns: 20% 70%;
+  grid-template-columns: 16% 94%;
   font-size: .8em;
   line-height: 1.4;
   color: #4e4e4e;
@@ -1119,7 +1133,7 @@ letter-spacing: 0.7px;
 .attachment_footer {
          
   
-  padding: 1.5rem 1rem;
+  padding: 1.5rem 1rem ;
   border-top: 1px solid #dadce0;
  
 }
@@ -1515,7 +1529,7 @@ p:after{
               <div class="attachment_infobox_photo-wrapper" >
 
 
-                  <amp-img src="assets/images/avatar.jpg" width="160" height="160" layout="fixed">
+                  <amp-img src="assets/images/avatar.jpg" width="160" height="160" layout="fixed" style="margin-top: .938rem;">
                   </amp-img>
                   <div class="attachment_infobox_right" style="padding: 0 0.938rem; display: flex;
   flex-direction: column; 
@@ -1527,8 +1541,9 @@ p:after{
   
         
   </ul>
-                   
-  <div class="details" >  
+  <a href="https://open.spotify.com/artist/3DbKZBWkMwH7teswhuuArq" rel="noopener noreferer" >                 
+  <div class="details" > 
+ 
     <span> 
     
     
@@ -1539,15 +1554,25 @@ p:after{
                       </svg>
     
                    </span>
-                      <span > 
+
+
+
+
                   
-                          
-                  5,445  Spotify Monthly Listeners
-                        
+                   
     
-                          <br>
-               </span>
-            </div>               
+                    <span > 
+                                            
+                        261  Spotify Monthly Listeners                        
+          
+                                <br>
+                     </span>
+          
+           
+
+            </div>    
+            
+        </a>
                    
                          </div>
 
@@ -1573,7 +1598,25 @@ p:after{
             <h3>Biography</h3>
 
          <p>
-            Crucial Todd, an enigmatic and mysterious figure hailing from the South Coast of the UK, has been a prominent figure in the multi-genre dance music scene for some years. However, in a bold move to shed any possibility of any DJ ego and concentrate on making the messages within his music the focal point, he rebranded himself under a new name that only he knows the meaning of. With a deep sense of responsibility to elevate the awareness and spirit of his audience, Crucial Todd constructs his unique brand of music - blending Jackin House, NUKG and DnB, which he aptly refers to as Jackin Bass. 
+            Crucial Todd, an enigmatic and mysterious figure hailing from the South Coast of the UK, has been a prominent figure in the multi-genre dance music scene for some years. 
+            
+        </p>
+ 
+            
+            <figure style="padding:
+            0;
+             ">
+            <amp-img src="assets/images/tony3.png" layout="responsive" width="863" height="560"      
+             
+             
+             
+            > </amp-img>
+        
+            </figure>
+            
+            
+            <p> 
+            However, in a bold move to shed any possibility of any DJ ego and concentrate on making the messages within his music the focal point, he rebranded himself under a new name that only he knows the meaning of. With a deep sense of responsibility to elevate the awareness and spirit of his audience, Crucial Todd constructs his unique brand of music - blending Jackin House, NUKG and DnB, which he aptly refers to as Jackin Bass. 
         
         
         </p>
@@ -1585,7 +1628,7 @@ p:after{
          
          
         > </amp-img>
-        <figcaption>A view of the sea</figcaption>
+        <figcaption>2024</figcaption>
         </figure>
 
         
@@ -1598,7 +1641,8 @@ p:after{
             Even the label Crucial Todd runs with SuperStyle Deluxe - The Payback Project has a mission to raise vibrations and help those that need it and have already been working with a company that go out and help clear overgrown gardens of people that are struggling for various reasons, as this brings joy to those that are being helped and those that watch the videos of the Payback team helping people that need it. 
         </p> 
            
-   
+       
+
           
          <p> Crucial Todd and The Payback Project are ones to watch in 2025! 
          </p>  
@@ -1651,7 +1695,7 @@ p:after{
 
 
 
-      <div class="attachment_footer flex beige" >
+      <div class="attachment_footer flex beige pb1" >
 
 
 
@@ -1729,24 +1773,19 @@ p:after{
 
         </ul>
 
-        
 
-   
+ </div>
 
+ <div class="attachment_bg-grey attachment-footerlogo pt1">  
 
-
- <span style="display: flex; align-items: center; " >
-
-
-
-
-   
-    <p style="width: fit-content;">© 2025  TellMe Something</p>   
+    <figure  class="pr1 pl1 pt1 m0">
  
-
-
-
-</span>  
+         <amp-img src="assets/ctlogo-footer.webp" width="239" height="53" layout="fixed" >
+         </amp-img>
+         <figcaption>© 2025  TellMe Something</figcaption>
+     </figure>
+ 
+ 
  </div>
             
       </div>
@@ -1812,7 +1851,7 @@ p:after{
                       <div class="attachment_supporting-text pr1 pl1 pb1">
                        
 
-                        <div class="space-between "> 
+                        <div class="space-between pb1 "> 
                             <h4>Promo Dj Mix</h4>
                             
                             <span>       
@@ -1822,29 +1861,34 @@ p:after{
                         </span>
                         </div>
                     
+       
+           
+                        <iframe width="100%" height="60" src="https://player-widget.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&light=1&feed=%2FCRUCIALTODD%2Fpromo-mix%2F" frameborder="0" allow="encrypted-media; fullscreen; autoplay; idle-detection; speaker-selection; web-share;" ></iframe>
+            
+ 
+
 
                        
-                        <iframe width="100%" height="120" class="mt2" src="https://player-widget.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2FCRUCIALTODD%2F20-minute-demo-mix%2F" frameborder="0" ></iframe>
-
-                           
-
+                      
 <br>
 
 
 
-                        
+<iframe width="100%" height="120" class="mt2" src="https://player-widget.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2FCRUCIALTODD%2F20-minute-demo-mix%2F" frameborder="0" ></iframe>
+
+                           
+             
 
 
-            
-           
-            
-            
- 
+
+     
             
         
          
-<div class="space-between border-top mt1" > 
-            <h4>The Latest On Instagram</h4> <span>              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+<div class="space-between border-top mt1 pt2" > 
+            <h4>The Latest On Instagram</h4> <span>              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                 viewBox="0 0 24 24" style="display: inline-block;
+                 vertical-align: middle;"
                 fill="none" stroke="#2e2e2e" stroke-width="2" stroke-linecap="round"
                 stroke-linejoin="round" >
                 <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
@@ -1852,8 +1896,11 @@ p:after{
                 <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" /> 
             </svg></span>
         </div>
-            <amp-instagram data-shortcode="DF-3DagAHe9" width="310" height="551"  data-captioned layout="responsive">
+            <amp-instagram data-shortcode="DOQ7r5eCnZa" width="310" height="551"  noloading layout="responsive">
           </amp-instagram>
+
+      
+        
         
             
             
